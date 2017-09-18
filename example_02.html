@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			margin: 0;
+		}
+		.container {
+			height: 100vh;
+			background: lightblue;
+		}
+		/* 只有当包含块的高度不依赖该元素时，百分比高度才生效（要给父级一个确切的值）*/ 
+		/* 当父级不指定高度时，height的值为auto，就会依赖子元素的高度。*/
+		.child {
+			height: 100%;
+			background: coral;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="child">属性具有重叠的功能，指定规则的顺序很重要</div>
+	</div>
+</body>
+</html>
