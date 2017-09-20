@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul, li {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			font-size: 0;
+		}
+		li {
+			display: inline-block;
+			border: 1px solid #000;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+	<!-- inline-block 生成行级盒，为其内容生成块级盒 -->
+
+	<!-- 设置了inline-block属性的元素既拥有了block元素可以设置width和height的特性，又保持了inline元素不换行的特性。 -->
+
+	<!-- li之间的小空隙是空白符。要去除空白符产生的间隙，首先要理解空白符归根结底是个字符，通过设置font-size属性可以控制产生的间隙的大小。修改ul的font-size为0 -->
+	<ul>
+		<li>首页</li>
+		<li>关于</li>
+		<li>热点</li>
+		<li>联系我们</li>
+	</ul>
+</body>
+</html>
